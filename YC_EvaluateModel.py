@@ -181,6 +181,9 @@ plotError(testOutarray, maxDict, 'Maximum')
 plotError(testOutarray, minDict, 'Minimum')
 plotError(testOutarray, medianDict, 'Median')
 
+
+# Plot the boxplot of the errors
+
 plt.figure()
 bp = plt.boxplot(np.asarray(errorDict), showfliers=False, patch_artist=True,
             boxprops=dict(facecolor="lightblue", color="darkblue"),
